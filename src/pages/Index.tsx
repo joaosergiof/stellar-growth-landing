@@ -9,6 +9,7 @@ import Guarantees from '@/components/Guarantees';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import UrgencyBanner from '@/components/UrgencyBanner';
+import NewsletterPopup from '@/components/NewsletterPopup';
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
       <Guarantees />
       <ContactSection />
       <Footer />
+      <NewsletterPopup />
     </div>
   );
 };

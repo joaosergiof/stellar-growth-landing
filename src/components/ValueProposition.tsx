@@ -26,7 +26,10 @@ const ValueProposition = () => {
               <p className="text-gray-800">Acompanhamento contínuo dos resultados</p>
             </div>
           </div>
-          <Button className="bg-cta hover:bg-cta-hover text-white rounded-full px-8 py-6 text-lg flex items-center gap-2 mx-auto">
+          <Button 
+            className="bg-cta hover:bg-cta-hover text-white rounded-full px-8 py-6 text-lg flex items-center gap-2 mx-auto transform hover:scale-105 transition-all"
+            onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Solicitar Proposta Personalizada
             <ArrowRight className="w-5 h-5" />
           </Button>
