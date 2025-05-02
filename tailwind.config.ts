@@ -21,6 +21,7 @@ export default {
 		extend: {
 			fontFamily: {
 				poppins: ['Poppins', 'sans-serif'],
+				playfair: ['Playfair Display', 'serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -77,6 +78,10 @@ export default {
 				cta: {
 					DEFAULT: '#F97316',
 					hover: '#EA580C',
+				},
+				gold: {
+					DEFAULT: '#D4AF37',
+					light: '#F8F4E3',
 				},
 			},
 			borderRadius: {

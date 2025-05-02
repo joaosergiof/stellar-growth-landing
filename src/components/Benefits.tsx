@@ -2,43 +2,44 @@
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 const benefitsData = [
   {
-    title: "Liderança Transformadora",
-    description: "Melhore as equipes de liderança para aumentar a produtividade, motivação e retenção de talentos.",
+    title: "Liderança com Propósito",
+    description: "Desenvolva líderes inspiradores que motivam equipes e alcançam resultados extraordinários.",
     icon: "👥"
   },
   {
-    title: "Operação de Excelência",
-    description: "Maximizar a eficiência operacional e reduzir desperdícios, melhorando os resultados financeiros.",
+    title: "Equipes de Alta Performance",
+    description: "Transforme grupos de indivíduos em times coesos e altamente produtivos.",
     icon: "⚙️"
   },
   {
-    title: "Aumento de Resultados Comerciais",
-    description: "Melhorar a taxa de conversão e retenção no setor comercial, gerando mais lucros.",
-    icon: "📈"
+    title: "Inteligência Emocional",
+    description: "Aprenda a reconhecer, entender e gerenciar emoções para otimizar relacionamentos e resultados.",
+    icon: "🧠"
   },
   {
-    title: "Redução do Turnover",
-    description: "Reduzir custos operacionais e melhorar o ambiente de trabalho com equipes mais engajadas.",
+    title: "Gestão de Conflitos",
+    description: "Técnicas comprovadas para transformar conflitos em oportunidades de crescimento.",
     icon: "🤝"
   },
   {
-    title: "ROI Garantido",
-    description: "Investir em pessoas gera um impacto financeiro positivo imediato em sua organização.",
-    icon: "💰"
+    title: "Cultura Organizacional",
+    description: "Construa uma cultura corporativa forte que atrai e retém os melhores talentos.",
+    icon: "🏆"
   }
 ];
 
 const Benefits = () => {
   return (
-    <section id="beneficios" className="py-20 bg-gray-50">
+    <section id="palestras" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue mb-4">Benefícios Comprovados</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-blue mb-4">Temas de Palestras</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Nossas soluções são desenvolvidas para trazer resultados tangíveis e mensuráveis para sua empresa
+            Conheça as áreas de especialidade onde João Sergio transforma conhecimento acadêmico e experiência prática em resultados mensuráveis
           </p>
         </div>
         
@@ -57,10 +58,10 @@ const Benefits = () => {
         </div>
         
         <div className="text-center mt-12">
-          <a href="#contato" className="inline-flex items-center text-blue hover:text-blue-light font-medium gap-2 text-lg">
-            Quero esses resultados 
+          <Link to="/temas" className="inline-flex items-center text-blue hover:text-blue-light font-medium gap-2 text-lg">
+            Ver todos os temas 
             <ArrowRight className="w-4 h-4" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

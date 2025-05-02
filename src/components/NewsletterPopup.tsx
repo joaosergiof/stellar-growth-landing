@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { X } from "lucide-react";
+import { X, FileText } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 
 const NewsletterPopup = () => {
@@ -57,13 +57,16 @@ const NewsletterPopup = () => {
         </button>
         
         <div className="text-center mb-6">
-          <h3 className="text-2xl font-bold text-blue mb-2">Ebook Gratuito</h3>
+          <div className="mx-auto w-16 h-16 bg-blue/10 rounded-full flex items-center justify-center mb-4">
+            <FileText className="h-8 w-8 text-blue" />
+          </div>
+          <h3 className="text-2xl font-bold text-blue mb-2">E-book Gratuito</h3>
           <p className="text-gray-600">
-            Receba agora mesmo nosso e-book exclusivo "7 Estratégias para Transformar sua Liderança em Resultados" gratuitamente.
+            Receba agora mesmo o e-book exclusivo "Os 7 Pilares da Liderança Emocional" escrito por João Sergio com base em seus estudos em Harvard.
           </p>
         </div>
         
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form id="newsletter" onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-2">
             <Input 
               type="email" 

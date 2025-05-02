@@ -10,6 +10,8 @@ import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import UrgencyBanner from '@/components/UrgencyBanner';
 import NewsletterPopup from '@/components/NewsletterPopup';
+import ClientsSection from '@/components/ClientsSection';
+import VideoSection from '@/components/VideoSection';
 
 const Index = () => {
   return (
@@ -17,9 +19,11 @@ const Index = () => {
       <UrgencyBanner />
       <Header />
       <Hero />
+      <ClientsSection />
       <Benefits />
-      <Testimonials />
+      <VideoSection />
       <ValueProposition />
+      <Testimonials />
       <Guarantees />
       <ContactSection />
       <Footer />

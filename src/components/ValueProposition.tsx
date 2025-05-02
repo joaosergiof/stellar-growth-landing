@@ -8,14 +8,14 @@ const ValueProposition = () => {
     <section className="py-20 bg-green-light">
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue mb-6">Nossa Proposta de Valor Única</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-blue mb-6">Por que escolher João Sergio?</h2>
           <p className="text-xl leading-relaxed mb-8">
-            Nosso diferencial é oferecer soluções de gestão e treinamento completamente personalizadas, voltadas para resultados mensuráveis. Com nosso trabalho, sua empresa vai não apenas otimizar suas operações e melhorar sua liderança, mas também ver um aumento direto na performance e nos lucros.
+            João combina formação acadêmica internacional com experiência prática em dezenas de setores. Sua metodologia exclusiva baseada em Harvard Business School com técnicas de aprendizado acelerado gera resultados imediatos e mensuráveis para sua organização.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <div className="bg-white p-4 rounded-lg shadow-md flex items-center max-w-xs">
               <div className="text-3xl mr-4 text-green">✓</div>
-              <p className="text-gray-800">Performance comprovada em mais de 200 empresas</p>
+              <p className="text-gray-800">Formação executiva em Harvard Business School</p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md flex items-center max-w-xs">
               <div className="text-3xl mr-4 text-green">✓</div>
@@ -23,7 +23,7 @@ const ValueProposition = () => {
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md flex items-center max-w-xs">
               <div className="text-3xl mr-4 text-green">✓</div>
-              <p className="text-gray-800">Acompanhamento contínuo dos resultados</p>
+              <p className="text-gray-800">Palestras customizadas para sua realidade</p>
             </div>
           </div>
           <Button 
