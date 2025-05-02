@@ -114,7 +114,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-blue">Endereço</h4>
-                    <p className="text-gray-600">São Paulo - SP</p>
+                    <p className="text-gray-600">São Paulo - Capital</p>
                   </div>
                 </div>
               </div>
