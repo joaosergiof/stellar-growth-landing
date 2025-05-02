@@ -15,7 +15,7 @@ const testimonialsData = [
     author: "Henrique Mattos",
     position: "Coordenador de Vendas",
     company: "Grupo Ita Aços",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    avatar: "/lovable-uploads/bbb729a7-4682-4707-a4ed-29dbbeab50d3.png"
   },
   {
     quote: "A palestra de João Sergio foi um divisor de águas para nossa equipe. A performance aumentou em 40% nos meses seguintes!",

@@ -16,6 +16,13 @@ const testimonialsData = [
     position: "CEO",
     company: "TechSolutions",
     avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+  },
+  {
+    quote: "Grande tutor, coach, professor, conduziu com excelência a grande evolução em minha carreira, com um trabalho exclusivo visando pontos estratégicos a serem trabalhados e também melhorados. Com grande êxito estamos conseguimos atingir resultados expressivos não só em números comerciais mas também um grande desenvolvimento pessoal e profissional notável.",
+    author: "Henrique Mattos",
+    position: "Coordenador de Vendas",
+    company: "Grupo Ita Aços",
+    avatar: "/lovable-uploads/bbb729a7-4682-4707-a4ed-29dbbeab50d3.png"
   }
 ];
 
