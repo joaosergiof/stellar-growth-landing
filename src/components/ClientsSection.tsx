@@ -42,8 +42,8 @@ const ClientsSection = () => {
             <p className="text-gray-600">Pessoas impactadas</p>
           </div>
           <div>
-            <div className="text-3xl font-bold text-blue">1.000+</div>
-            <p className="text-gray-600">Horas de palestras</p>
+            <div className="text-3xl font-bold text-blue">8.000+</div>
+            <p className="text-gray-600">Horas de treinamentos</p>
           </div>
         </div>
       </div>

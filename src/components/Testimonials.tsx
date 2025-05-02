@@ -11,6 +11,13 @@ import {
 
 const testimonialsData = [
   {
+    quote: "Grande tutor, coach, professor, conduziu com excelência a grande evolução em minha carreira, com um trabalho exclusivo visando pontos estratégicos a serem trabalhados e também melhorados. Com grande êxito estamos conseguimos atingir resultados expressivos não só em números comerciais mas também um grande desenvolvimento pessoal e profissional notável.",
+    author: "Henrique Mattos",
+    position: "Coordenador de Vendas",
+    company: "Grupo Ita Aços",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+  },
+  {
     quote: "A palestra de João Sergio foi um divisor de águas para nossa equipe. A performance aumentou em 40% nos meses seguintes!",
     author: "Ana Silva",
     position: "Diretora de RH",

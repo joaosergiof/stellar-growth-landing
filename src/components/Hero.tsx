@@ -19,19 +19,19 @@ const Hero = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-in delay-300">
             <Button 
-              className="bg-cta hover:bg-cta-hover text-white rounded-full px-8 py-6 text-lg flex items-center gap-2 transition-all transform hover:scale-105" 
+              className="bg-cta hover:bg-cta-hover text-white rounded-full px-6 py-6 text-base sm:text-lg flex items-center gap-2 transition-all transform hover:scale-105 shadow-lg" 
               onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Quero trazer João Sergio para minha empresa
-              <ArrowRight className="w-5 h-5" />
+              <span className="whitespace-normal">Quero trazer João Sergio para minha empresa</span>
+              <ArrowRight className="w-5 h-5 flex-shrink-0" />
             </Button>
             <Button 
               variant="outline" 
-              className="bg-transparent border-2 border-white text-white hover:bg-white/10 rounded-full px-8 py-6 text-lg transition-all flex items-center gap-2"
+              className="bg-transparent border-2 border-white text-white hover:bg-white/10 rounded-full px-6 py-6 text-base sm:text-lg transition-all flex items-center gap-2"
               onClick={() => document.getElementById('newsletter')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Baixe o e-book gratuito
-              <FileText className="w-5 h-5" />
+              <span className="whitespace-normal">Baixe o e-book gratuito</span>
+              <FileText className="w-5 h-5 flex-shrink-0" />
             </Button>
           </div>
           
