@@ -63,7 +63,7 @@ export default function Login() {
         title: "Login realizado com sucesso",
         description: "Redirecionando para o dashboard...",
       });
-      // O redirecionamento acontecerá pelo useEffect quando isAuthenticated mudar
+      navigate("/dashboard");
     } catch (err) {
       console.error("Erro ao fazer login:", err);
       toast({
@@ -98,7 +98,11 @@ export default function Login() {
     
     try {
       await login(email, password);
-      // O redirecionamento acontecerá pelo useEffect quando isAuthenticated mudar
+      toast({
+        title: "Login demonstrativo",
+        description: `Logado como ${userType}. Redirecionando...`,
+      });
+      navigate("/dashboard");
     } catch (err) {
       console.error("Erro ao fazer login demonstrativo:", err);
       toast({

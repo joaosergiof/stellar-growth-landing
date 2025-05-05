@@ -135,7 +135,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
 
     try {
       // Simulate API delay
-      await new Promise((r) => setTimeout(r, 1000));
+      await new Promise((r) => setTimeout(r, 500));
       
       const foundUser = mockUsers.find(
         (u) => u.email === email && u.password === password
@@ -156,6 +156,8 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
       
       setUser(userWithCorrectType);
       localStorage.setItem("gestor_pops_user", JSON.stringify(userWithCorrectType));
+      
+      return; // Successful login
     } catch (err) {
       setError(err instanceof Error ? err.message : "Erro ao fazer login");
       console.error("Login error:", err);
