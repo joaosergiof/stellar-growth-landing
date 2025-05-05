@@ -147,8 +147,15 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
 
       // Create a cleaned user object without the password
       const { password: _, ...userWithoutPassword } = foundUser;
-      setUser(userWithoutPassword);
-      localStorage.setItem("gestor_pops_user", JSON.stringify(userWithoutPassword));
+      
+      // Explicitly set the role as keyof typeof ROLES
+      const userWithCorrectType: User = {
+        ...userWithoutPassword,
+        role: userWithoutPassword.role as keyof typeof ROLES
+      };
+      
+      setUser(userWithCorrectType);
+      localStorage.setItem("gestor_pops_user", JSON.stringify(userWithCorrectType));
     } catch (err) {
       setError(err instanceof Error ? err.message : "Erro ao fazer login");
       console.error("Login error:", err);

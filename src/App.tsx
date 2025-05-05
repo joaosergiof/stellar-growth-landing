@@ -1,7 +1,7 @@
 
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider, useAuth } from "./components/AuthProvider";
-import { Toaster } from "@/hooks/use-toast";
+import { Toaster } from "@/components/ui/toaster";
 
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
