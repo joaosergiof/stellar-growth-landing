@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -37,9 +37,16 @@ const loginSchema = z.object({
 });
 
 export default function Login() {
-  const { login, isLoading, error } = useAuth();
+  const { login, isLoading, error, isAuthenticated } = useAuth();
   const navigate = useNavigate();
   const { toast } = useToast();
+  
+  // Redirecionar se já estiver autenticado
+  useEffect(() => {
+    if (isAuthenticated) {
+      navigate("/dashboard");
+    }
+  }, [isAuthenticated, navigate]);
   
   const form = useForm<z.infer<typeof loginSchema>>({
     resolver: zodResolver(loginSchema),
@@ -56,8 +63,9 @@ export default function Login() {
         title: "Login realizado com sucesso",
         description: "Redirecionando para o dashboard...",
       });
-      navigate("/dashboard");
+      // O redirecionamento acontecerá pelo useEffect quando isAuthenticated mudar
     } catch (err) {
+      console.error("Erro ao fazer login:", err);
       toast({
         variant: "destructive",
         title: "Falha no login",
@@ -90,12 +98,9 @@ export default function Login() {
     
     try {
       await login(email, password);
-      toast({
-        title: "Login demonstrativo",
-        description: `Logado como ${userType}. Redirecionando...`,
-      });
-      navigate("/dashboard");
+      // O redirecionamento acontecerá pelo useEffect quando isAuthenticated mudar
     } catch (err) {
+      console.error("Erro ao fazer login demonstrativo:", err);
       toast({
         variant: "destructive",
         title: "Falha no login",

@@ -159,6 +159,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
     } catch (err) {
       setError(err instanceof Error ? err.message : "Erro ao fazer login");
       console.error("Login error:", err);
+      throw err; // Re-throwing the error to be caught in the Login component
     } finally {
       setIsLoading(false);
     }
